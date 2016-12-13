@@ -1,5 +1,11 @@
+# System
 .DS_Store
+
+# Logs
 logs
 *.log
 npm-debug.log*
 node_modules
+
+# Compiled
+dist/

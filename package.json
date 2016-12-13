@@ -4,7 +4,9 @@
   "description": "A plugin to alias your own deploy command to `hexo deploy`.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile": "babel src -d dist",
+    "watch": "babel src -d dist -w",
+    "test": "npm run compile && mocha --compilers js:babel-register"
   },
   "repository": {
     "type": "git",
@@ -24,6 +26,9 @@
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-preset-es2015": "^6.18.0"
+    "babel-preset-es2015": "^6.18.0",
+    "babel-register": "^6.18.0",
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
   }
 }
