@@ -6,7 +6,8 @@
   "scripts": {
     "compile": "babel src -d dist",
     "watch": "babel src -d dist -w",
-    "test": "npm run compile && mocha --compilers js:babel-register"
+    "test": "npm run compile && mocha --compilers js:babel-register",
+    "prepublish": "npm run compile"
   },
   "repository": {
     "type": "git",
