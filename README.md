@@ -1,4 +1,4 @@
-# hexo-deploy-shell
+# hexo-deployer-shell
 
 Shell deployer plugin for [Hexo](https://hexo.io/).
 
@@ -7,7 +7,7 @@ This deployer is simple a alias to your own deploy shell scripts. You should use
 ## Installation
 
 ```bash
-npm install hexo-deploy-shell --save
+npm install hexo-deployer-shell --save
 ```
 
 ## Options
