@@ -11,5 +11,5 @@ describe('deployer', function() {
         }).catch(function(err){
             done(err);
         });
-    })
+    });
 });
