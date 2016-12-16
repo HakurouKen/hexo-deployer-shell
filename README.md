@@ -19,7 +19,17 @@ deploy:
     command: <your deploy command>
 ```
 
-That's all.
+You can specify options of command. For example:
+```yaml
+deploy:
+    type: shell
+    command: <your deploy command>
+    options:
+        timeout: 2000
+```
+`hexo-deployer-shell` use `child_process.exec` internal, the options arugments will be pass to `child_process.exec` directly. See more info on (Node.js official website)[https://nodejs.org/api/child_process.html#child_process_child_process_exec_command_options_callback].
+
+That's all. Enjoy!
 
 ## License
 
